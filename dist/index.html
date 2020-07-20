@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vinhos - Velasquez</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <script src="index.bundle.js"></script>
+
+</head>
+
+<body>
+  <header style:>
+    <h1 class="title is-1" align="center" style="background-color:#D8D8D8; margin: 0 0 30px 0; font-color:#8B0000">
+      Vinhos - Velasquez</h1>
+  </header>
+
+  <div class="columns">
+    <div class="column is-4">
+      <h1 class="title" align="center">Clientes:</h1>
+      <h1 class="subtitle" align="center">(Total em compras)</h1>
+      <table class="table" id="lista-clientes-valor">
+        <thead>
+          <tr>
+            <th title="Id">ID</th>
+            <th title="Nome">Nome</th>
+            <th title="Cpf">CPF</th>
+            <th title="Valor">Valor Total</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+
+    <div class="column is-4">
+      <h1 class="title" align="center">Clientes TOP 5:</h1>
+      <h1 class="subtitle" align="center">(Total de compras)</h1>
+      <table class="table" id="lista-clientes-compras">
+        <thead>
+          <tr>
+            <th title="Id">ID</th>
+            <th title="Nome">Nome</th>
+            <th title="Cpf">CPF</th>
+            <th title="Valor">Compras</th>
+          </tr>
+        </thead>
+      </table>
+      <article class="message">
+        <div class="message-header">
+          <p>Cliente e Valor da Venda mais alta em 2016:</p>
+        </div>
+        <div class="message-body">
+          <p id="venda-alta"></p>
+        </div>
+      </article>
+    </div>
+    <div class="column is-4">
+      <h1 class="title">Recomendação Cliente:</h1>
+      <input class="input is-rounded" id="input" type="text" placeholder="Digite o nome do cliente" value=""></input>
+      <button type="submit" class="button is-rounded" id="recomenda" style="margin: 15px 0">Recomendar</button>
+      <article class="message">
+        <div class="message-header">
+          <p id="nome-cliente">Cliente selecionado: </p>
+        </div>
+        <div class="message-body">
+          <p id="recomendacao">Selecione o cliente acima para recomendarmos um vinho</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</body>
+
+</html>
